@@ -7,8 +7,8 @@ from langchain_core.vectorstores import VectorStore, VectorStoreRetriever
 from langchain_qdrant import Qdrant
 from qdrant_client import QdrantClient
 
-from config import Config
-from model import create_embeddings, create_reranker
+from base.config import Config
+from base.model import create_embeddings, create_reranker
 
 def create_retriever(llm:BaseLanguageModel, vector_store: Optional[VectorStore]= None) -> VectorStoreRetriever:
     if not vector_store:

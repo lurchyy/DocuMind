@@ -5,7 +5,7 @@ from langchain_core.language_models import BaseLanguageModel
 import warnings
 warnings.filterwarnings("ignore")
 
-from config import Config
+from base.config import Config
 from flashrank import Ranker
 
 ranker = Ranker(model_name=Config.Model.RERANKER)

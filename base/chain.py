@@ -11,7 +11,7 @@ from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.tracers.stdout import ConsoleCallbackHandler
 from langchain_core.vectorstores import VectorStoreRetriever
 
-from config import Config
+from base.config import Config
 from session_history import get_session_history
 
 

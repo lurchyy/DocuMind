@@ -2,11 +2,11 @@ import asyncio
 import random
 import sys
 from pathlib import Path
-from chain import ask_question, create_chain
-from config import Config
-from ingestor import Ingestor
-from model import create_llm
-from retriever import create_retriever
+from base.chain import ask_question, create_chain
+from base.config import Config
+from base.ingestor import Ingestor
+from base.model import create_llm
+from base.retriever import create_retriever
 
 LOADING_MESSAGES = [
     "Hmmm....let me think about that.",
